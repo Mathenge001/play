@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinking Card Game</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <!-- Buttons -->
+<div class="button-container">
+  <button onclick="viewHistory()">View History</button>
+  <button onclick="reshuffleDeck()">Reshuffle</button>
+</div>
+
+<!-- Card container -->
+<div class="card-container">
+
+  <!-- Card 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/a5/37/05/a53705b9a77b24e5b04b99e06b737a60.jpg" alt="Front Image">
+        <p>what's this country?</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/98/8c/aa/988caa6b0f003674d38cc3697814c4c8.jpg" alt="Back Image">
+        <p>Argentina</p>
+      </div>
+    </div>
+  </div>
+
+ <!-- Card 2 -->
+<div class="card" onclick="flipCard(this)">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="https://i.pinimg.com/564x/1d/51/1d/1d511d366c59dc47671860887234eb6b.jpg" alt="Front Image">
+      <p>Rockstar moment!</p>
+        <!-- Embed YouTube video -->
+      <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/nfu2VaeXuLU" frameborder="0" allowfullscreen style="display: none;"></iframe>
+
+      <!-- Add audio element here -->
+      <audio controls autoplay>
+        <source src="DIRECT_AUDIO_URL.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="card-back">
+      <img src="https://i.pinimg.com/564x/0b/e4/3d/0be43d6ed3a6d06caa2c87eda4ab5eab.jpg" alt="Back Image">
+      <p>Bust out your best air guitar solo.</p>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Card 3-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🏙️ Capital gains challenge!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name 5 capital cities.(shot for each lie)</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- Repeat for each card -->
+  </div>
+  <div class="arrow-container">
+    <button class="prev-arrow" onclick="prevCard()">&lt; Prev</button>
+    <button class="next-arrow" onclick="nextCard()">Next &gt;</button>
+    <a href="index.html" class="back-button">Back to Home</a>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>

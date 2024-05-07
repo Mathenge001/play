@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+
+.card-container {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+  margin: 10px 10px;
+    transform: translateX(-50%);
+  top: 0; /* Add this line */
+  left: 50%;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-front p{
+  position: absolute;
+  bottom: 10px;
+  left: 0px; /* Adjust left position */
+  width: 94%; /* Adjust width to accommodate left and right padding */
+  text-align: center;
+  background-color: rgb(44, 44, 49);
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+.card-back p {
+  position: absolute;
+  bottom: 0;
+  left: 0px; /* Adjust left position */
+  width: 24%; /* Adjust width to accommodate left and right padding */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  margin: 0;
+  padding: 115px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+
+.arrow-container {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.prev-arrow, .next-arrow, .back-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.prev-arrow:hover, .next-arrow:hover, .back-button:hover {
+  background-color: #555;
+}

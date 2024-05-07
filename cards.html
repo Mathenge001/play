@@ -1,0 +1,3857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinking Card Game</title>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <!-- Buttons -->
+<div class="button-container">
+  <button onclick="viewHistory()">View History</button>
+  <button onclick="reshuffleDeck()">Reshuffle</button>
+</div>
+
+<!-- Card container -->
+<div class="card-container">
+
+  <!-- Card 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/23/f4/a0/23f4a0ea736b256d076215fff5b8d2e3.jpg" alt="Front Image">
+        <p>Drop it like it's hot!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/98/8c/aa/988caa6b0f003674d38cc3697814c4c8.jpg" alt="Back Image">
+        <p>Serve us 10 squats Queen!👸</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/1d/51/1d/1d511d366c59dc47671860887234eb6b.jpg" alt="Front Image">
+        <p>Rockstar moment!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/0b/e4/3d/0be43d6ed3a6d06caa2c87eda4ab5eab.jpg" alt="Back Image">
+        <p>Bust out your best air guitar solo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🏙️ Capital gains challenge!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name 5 capital cities.(shot for each lie)</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 4-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🌟 Impression extravaganza!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Do an impression of a celebrity.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 5-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🐔 Bawk, bawk, boogie!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Do a chicken dance.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 6-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p> 🌍 Foreign tunes challenge!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Sing the chorus of a song in a foreign language</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 7-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤓 Spell it backward! (someone else reads you the card)</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>a.supercalifragilisticexpialidocious.<br>
+        b.Pneumonoultramicroscopicsilicovolcanoconiosis<br>
+       c.Floccinaucinihilipilification</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 8-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p> 🦘 Hop it out!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Hop on one foot around the table.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 9-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📖 Five-word story!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Tell a story using only 3 words.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 10-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🐠 Finding nemo!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name 4 animals that live in the ocean</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 11-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>✏️ Doodle time!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Draw a quick doodle of a mustache on your face blindfolded. make it impressive!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 12-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📚 Fairy tale challenge!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name 4 classic fairy tale characters</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 13-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>7️⃣ "Seven times</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Recite the multiplication table for the number 7</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 14-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>☁️ Cloud your sky!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name 3 types of clouds.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 15-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>💃 Dance craze!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Invent a new dance move and demonstrate it to the group.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 16-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🦘🗣️ Hop'n twist </p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Hop on one foot while reciting a tongue twister.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 17-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎶🐯💃 Animal jam</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Sing the chorus of a song using only animal noises and dance like that animal.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 18-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤔🧘‍♂️ "Plank riddle time!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Solve a riddle while holding a plank.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 19-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🏋️‍♂️🏛️ Historical burpee</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Share a fun fact about a famous historical figure while doing 5 burpees</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 20-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>💥🦩 Superpower balance talk</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Describe your dream superpower and how you'd use it while holding a one-legged balance</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 21-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🐖🎶 "Piggyback Pop!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Give the person on your right a piggyback ride around the room while singing the chorus of a song</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 22-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>☠️ Hide the rum</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Do your best impersonation of a pirate</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 23-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>👑 Hey hitler</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Make a rule</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 24-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🍔🎭 mh! mh!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Perform a dramatic reading of a menu item</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 25-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>💃🎵 Dance Off</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Have a dance-off where each player showcases their signature move!</p>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Card 26-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>😂🍺1 mans laugh's another man drink</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Every time someone laughs, they must take a sip</p>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Card 27-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📏🍷Checking altitude</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>The tallest player must drink whenever a number is drawn!</p>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Card 28-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Check your height</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>(the tallest person drinks)<br>
+        70</p>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Card 29-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🌟🤘 rock on</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Sing 'Twinkle, Twinkle, Little Star' in a heavy metal style! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 30-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>⏰🤫 Take it out</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Choose someone to take a 'timeout' and sit in the corner for one round!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 31-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🔄🥂 Girl next door.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Everyone must swap drinks with the person on their left</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 32-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🍔🍦 Complex platter</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>What's the weirdest food combination you've ever tried?</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 33-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📱😏 smooth operator</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Send a pickup line to a random contact in your phone!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 34-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📝⏱️ Think fast</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Name items in a category without repeating or hesitating!(you pick)</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 35-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🌟🤔 guess who</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Write the name of a celebrity on a sticky note and stick it to your forehead. Guess who you are by asking yes/no questions! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 36-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎭🔄Reverse Charades</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>One person guesses while the rest of the group acts out the word! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 37-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>⏲️❓ rapid fire</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Answer as many questions as possible in 215 seconds!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 38-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>⛏️🍺 lost and found</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Whenever someone says 'mine,' they must drink!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 39-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤚😊 Nice guy</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>If someone touches their face, they must give a compliment to the person on their left! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 40-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🏴‍☠️🗣️ captain Sparrow!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>"Every time someone uses a word starting with the letter 'S,' they must speak in a pirate accent for the next round! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 41-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🍕🥤 hunger games</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Whenever someone mentions food, they must take a sip!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 42-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🅰️➡️🔄 show off</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Recite the alphabet backward as fast as you can!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 43-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎤🤪 shame them</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Choose someone to sing a song in a funny accent!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 44-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>📸😬 I'm just a child</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Share your most cringeworthy childhood photo!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 45-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p> 🕺💃 Michael Jackson</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Attempt to breakdance for 30 seconds!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 46-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p> 📱😳 Oooopsie!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Take a chat screenshot and send it to the same person.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 48-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎤🍹Raw talent</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Freestyle a rap about what you're drinking!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 49-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>😂🎭 Impression Roulette</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Everyone does an impression, and the worst drinks!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 50-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤗🎶 I swear im not a clown.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Players must use jazz hands whenever they speak!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 51-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>😏📢 Let's have it</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>hoose someone to recite a cheesy pickup line to a stranger/someone in the group.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 52-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>💬💃 Move your type.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Perform an interpretive dance based on the last text message you received!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 53-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎩🃏 Abracadabra</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Perform a magic trick with objects you find in the room!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 54-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎤🧸 talk to us</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Give a heartfelt speech about your favorite inanimate object</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 55-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>💭💃 I had a dream</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Perform a 60-second interpretive dance about a recent dream you had! </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 56-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤹‍♂️🕒 welcome to the circus</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Attempt to juggle three objects for 20 seconds!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 57-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🤫🗣️ Word sneak.(read alone)</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Incorporate a secret word into casual conversation!(they get it you drink. you get it they drink)</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 58-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p> 🎭🤬 Hello poetry</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Anyone caught swearing must recite a Shakespearean insult!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 59-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🗣️🌍 tower of babel!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Players must speak in a foreign accent of their choice for the next round!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 60-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>👑🎩 I crown thee!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>The person who drew the card must be addressed as 'Your Majesty' for the rest of the game!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 61-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🎂🎶 let them eat cake</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Sing 'Happy Birthday' to yourself in a different language!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 62-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>🖼️🤔 Paint me a picture!</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Strike a pose and have others guess which famous painting you're imitating!</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 63-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 64-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 65-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 66-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Card 67-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 68-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 69-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 70-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 71-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 72-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 73-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 74-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 75-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 76-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 77-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 78-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 79-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 80-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 81-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 82-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 83-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 84-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 85-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 86-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 87-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 88-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 89-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 90-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 91-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 92-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 93-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 94-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 95-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 96-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 97-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 98-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 99-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 100-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 101-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 102-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 103-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 104-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 105-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 106-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 107-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 108-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 109-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Card 110-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 111-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 112-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 113-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 114-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 115-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 116-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 117-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 118-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 119-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 120-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 121-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 122-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 123-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 124-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 125-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 126-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 127-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 128-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 129-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 130-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 131-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 133-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 134-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 135-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 136-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 137-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 138-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 139-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 140-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 141-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 142-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 143-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 144-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 145-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 146-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 147-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 148-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 149-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 150-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 151-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 152-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 153-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 154-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 155-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 156-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 157-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 158-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 159-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 160-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 161-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 162-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 163-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 164-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 165-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 166-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 167-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 168-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 169-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 170-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 171-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 172-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 173-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 174-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 175-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 176-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 177-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 178-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 179-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 180-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 181-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 182-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 183-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 184-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 185-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 186-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 187-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 188-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 189-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 190-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 191-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 192-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 193-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 194-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 195-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 196-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 197-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 198-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 199-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 200-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 201-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 202-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 203-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 204-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 205-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 206-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 207-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 208-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 209-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 210-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 211-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 212-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 213-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 214-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 215-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 216-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 217-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 218-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 219-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 220-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 221-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 223-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 224-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 225-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 226-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 227-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 228-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 229-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 230-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 231-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 232-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 233-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 234-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 235-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 236-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 237-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 238-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 239-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 240-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 241-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 242-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 243-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 244-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 245-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 246-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 247-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 248-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 249-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 250-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 251-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 252-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 253-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 254-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 255-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 256-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 257-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 258-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 259-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 260-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 261-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 262-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 263-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 264-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 265-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 266-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 267-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 268-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 269-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Card 270-->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg" alt="Front Image">
+        <p>Third card text here.</p>
+      </div>
+      <div class="card-back">
+        <img src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg" alt="Back Image">
+        <p>Third back card text here.</p>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Repeat for each card -->
+  </div>
+  <div class="arrow-container">
+    <button class="prev-arrow" onclick="prevCard()">&lt; Prev</button>
+    <button class="next-arrow" onclick="nextCard()">Next &gt;</button>
+    <a href="index.html" class="back-button">Back to Home</a>
+  </div>
+  <script src="cards.js"></script>
+</body>
+</html>
