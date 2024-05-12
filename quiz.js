@@ -11,6 +11,11 @@ function showCard(index) {
   });
 }
 
+
+
+
+
+
 function toggleCard() {
   // Check if the card is already flipped
   if (this.classList.contains('flip')) {
@@ -23,8 +28,27 @@ function toggleCard() {
   }
 }
 
+function prevCard() {
+  currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+  showCard(currentCardIndex);
+}
+
+function nextCard() {
+  currentCardIndex = (currentCardIndex + 1) % cards.length;
+  showCard(currentCardIndex);
+}
+
 showCard(currentCardIndex); // Show the initial card
 
 cards.forEach(card => {
   card.addEventListener('click', toggleCard);
 });
+
+document.querySelector('.prev-arrow').addEventListener('click', prevCard);
+
+let flippedCards = [];
+
+
+
+document.querySelector('.save-progress-button').addEventListener('click', saveProgress);
+document.querySelector('.reshuffle-deck-button').addEventListener('click', reshuffleDeck);
