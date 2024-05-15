@@ -1,18 +1,30 @@
 let currentCardIndex = 0;
 const cards = Array.from(document.querySelectorAll('.card'));
-let cardHistory = [currentCardIndex]; // Array to keep track of card history
-let historyPointer = 0; // Pointer to navigate through the card history
+let cardHistory = [currentCardIndex];
+let historyPointer = 0;
 
+const audios = document.getElementsByTagName('audio');
+for (let i = 0; i < audios.length; i++) {
+  audios[i].addEventListener('ended', resetAudio);
+}
 function showCard(index) {
   cards.forEach((card, idx) => {
     card.style.display = (idx === index) ? 'block' : 'none';
   });
+   resetAudio();
+}
+function resetAudio() {
+  const audios = document.getElementsByTagName('audio');
+  for (let i = 0; i < audios.length; i++) {
+    audios[i].pause();
+    audios[i].currentTime = 0;
+  }
 }
 
 function toggleCard() {
   if (this.classList.contains('flip')) {
     currentCardIndex = (currentCardIndex + 1) % cards.length;
-    cardHistory = cardHistory.slice(0, historyPointer + 1); // Trim history if we go forward after going back
+    cardHistory = cardHistory.slice(0, historyPointer + 1);
     cardHistory.push(currentCardIndex);
     historyPointer++;
     showCard(currentCardIndex);
@@ -26,7 +38,7 @@ function prevCard() {
     historyPointer--;
     currentCardIndex = cardHistory[historyPointer];
     showCard(currentCardIndex);
-    unflipCard()
+    unflipCard();
   }
 }
 
@@ -35,47 +47,37 @@ function nextCard() {
     historyPointer++;
     currentCardIndex = cardHistory[historyPointer];
     showCard(currentCardIndex);
-    unflipCard()
+    unflipCard();
   } else {
     currentCardIndex = (currentCardIndex + 1) % cards.length;
     cardHistory.push(currentCardIndex);
     historyPointer++;
     showCard(currentCardIndex);
-    // unflipCard()
   }
 }
 
-function unflipCard() {
-  cards.forEach(card => card.classList.remove('flip'));
-}
 function flipCard(card) {
   card.querySelector('.card-inner').classList.toggle('flipped');
 }
-
+function unflipCard() {
+  cards.forEach(card => card.classList.remove('flip'));
+}
 function shuffleDeck() {
   const cardContainer = document.getElementById('cardContainer');
-  // Remove all cards from the container
   while (cardContainer.firstChild) {
     cardContainer.removeChild(cardContainer.firstChild);
   }
-
-  // Shuffle the cards array
   for (let i = cards.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [cards[i], cards[j]] = [cards[j], cards[i]];
   }
-
-  // Append the shuffled cards back to the container
   cards.forEach(card => cardContainer.appendChild(card));
-
-  // Reset the current card index and history
   currentCardIndex = 0;
   cardHistory = [currentCardIndex];
   historyPointer = 0;
   showCard(currentCardIndex);
 }
-
-showCard(currentCardIndex); // Show the initial card
+showCard(currentCardIndex);
 
 cards.forEach(card => {
   card.addEventListener('click', toggleCard);
@@ -83,4 +85,6 @@ cards.forEach(card => {
 
 document.querySelector('.prev-arrow').addEventListener('click', prevCard);
 document.querySelector('.next-arrow').addEventListener('click', nextCard);
-document.querySelector('.button-container button').addEventListener('click', shuffleDeck);
+document.querySelector('.back-button').addEventListener('click', shuffleDeck);
+
+window.addEventListener('load', resetAudio);
