@@ -1,21 +1,13 @@
-:root {
-  --primary-color: #333;
-  --secondary-color: #555;
-  --background-color: #fff;
-  --card-width: 300px;
-  --card-height: 500px;
-  --card-perspective: 1000px;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--background-color);
+  background-color: #ffffff;
 }
 
+
 .card-container {
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -23,19 +15,13 @@ body {
 }
 
 .card {
-  width: var(--card-width);
-  height: var(--card-height);
-  perspective: var(--card-perspective);
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
   margin: 10px 10px;
-  position: relative;
-  top: 0;
+    transform: translateX(-50%);
+  top: 0; /* Add this line */
   left: 50%;
-  transform: translateX(-50%);
-}
-
-.card.flip .card-inner {
-  transform: rotateY(180deg);
-  transition: transform 0.5s;
 }
 
 .card-inner {
@@ -45,24 +31,19 @@ body {
   transform-style: preserve-3d;
 }
 
-.card-front,
-.card-back {
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.card-front {
-  background-color: var(--primary-color);
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-.card-front img {
+.card-front img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -74,11 +55,11 @@ body {
   object-fit: cover;
 }
 
-.card-front p {
+.card-front p{
   position: absolute;
   bottom: 10px;
-  left: 20px;
-  right: 20px;
+  left: 0px; /* Adjust left position */
+  width: 94%; /* Adjust width to accommodate left and right padding */
   text-align: center;
   background-color: rgb(44, 44, 49);
   color: #fff;
@@ -89,14 +70,19 @@ body {
 .card-back p {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 0px; /* Adjust left position */
+  width: 24%; /* Adjust width to accommodate left and right padding */
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
   margin: 0;
   padding: 115px;
 }
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
 
 .arrow-container {
   position: fixed;
@@ -105,9 +91,8 @@ body {
   text-align: center;
 }
 
-.arrow-button,
-.back-button {
-  background-color: var(--primary-color);
+.prev-arrow, .next-arrow, .back-button {
+  background-color: #333;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -118,15 +103,6 @@ body {
   text-decoration: none;
 }
 
-.arrow-button:hover,
-.back-button:hover {
-  background-color: var(--secondary-color);
-}
-
-.prev-arrow {
-  left: 0;
-}
-
-.next-arrow {
-  right: 0;
+.prev-arrow:hover, .next-arrow:hover, .back-button:hover {
+  background-color: #555;
 }
