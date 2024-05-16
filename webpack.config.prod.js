@@ -3,13 +3,8 @@ const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = merge(common, {
+const productionConfig = {
   mode: 'production',
-  module: {
-    rules: [
-      // Add any necessary loaders here
-    ]
-  },
   devtool: 'source-map',
   optimization: {
     minimize: true,
@@ -45,5 +40,7 @@ module.exports = merge(common, {
       ],
     }),
   ],
-});
+};
+
+module.exports = merge(common, productionConfig);
 
