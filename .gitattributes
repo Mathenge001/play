@@ -1,10 +1,12 @@
 ## GITATTRIBUTES FOR WEB PROJECTS
 #
-# These settings are for any web project.
+# This file defines attributes for files in web projects.
 #
 # Details per file setting:
 #   text    These files should be normalized (i.e. convert CRLF to LF).
 #   binary  These files are binary and should be left untouched.
+#   diff    These files should not be diffed by Git.
+#   eol     The line ending style for text files.
 #
 # Note that binary is a macro for -text -diff.
 ######################################################################
@@ -13,60 +15,44 @@
 * text=auto
 
 ## SOURCE CODE
-'*.bat'      text eol=crlf
-'*.coffee'   text
-'*.(css|htm|html|inc|js|json|jsx|less|od|onlydata|php|pl|py|rb|sass|scm|scss|sh|sql|styl|tag|ts|tsx|xml|xhtml)' text
-'*.sh'       text eol=lf
+'*.{bat,coffee,css,htm,html,inc,js,json,jsx,less,od,onlydata,php,pl,py,rb,sass,scm,scss,sh,sql,styl,tag,ts,tsx,xml,xhtml}' text eol=lf
 
 ## DOCKER
-'.dockerignore' text
-'Dockerfile'     text
+'.{dockerignore,Dockerfile}' text eol=lf
 
 ## DOCUMENTATION
-'*.(markdown|md|mdwn|mdown|mkd|mkdn|mdtxt|mdtext|txt)' text
-'AUTHORS'      text
-'CHANGELOG'    text
-'CHANGES'      text
-'CONTRIBUTING' text
-'COPYING'      text
-'copyright'    text
-'*COPYRIGHT*'  text
-'INSTALL'      text
-'license'      text
-'LICENSE'      text
-'NEWS'         text
-'readme'       text
-'*README*'     text
-'TODO'         text
+'.{markdown,md,mdwn,mdown,mkd,mkdn,mdtxt,mdtext,txt}' text eol=lf
+'{AUTHORS,CHANGELOG,CHANGES,CONTRIBUTING,COPYING,copyright,COPYRIGHT*,INSTALL,license,LICENSE*,NEWS,readme,README*,TODO}' text eol=lf
 
 ## TEMPLATES
-'*.(dot|ejs|haml|handlebars|hbs|hbt|jade|latte|mustache|njk|phtml|tmpl|tpl|twig)' text
+'*.{dot,ejs,haml,handlebars,hbs,hbt,jade,latte,mustache,njk,phtml,tmpl,tpl,twig}' text eol=lf
 
 ## LINTERS
-'.(babelrc|csslintrc|eslintrc|htmlhintrc|jscsrc|jshintrc|jshintignore|prettierrc|stylelintrc)' text
+'.{babelrc,csslintrc,eslintrc,htmlhintrc,jscsrc,jshintrc,jshintignore,prettierrc,stylelintrc}' text
 
 ## CONFIGS
-'.(bowerrc|cnf|conf|config|browserslistrc|editorconfig|gitattributes|gitconfig|gitignore|htaccess|npmignore|yaml|yml|browserslist|Makefile|makefile)' text
+'.{bowerrc,cnf,conf,config,browserslistrc,editorconfig,gitattributes,gitconfig,gitignore,htaccess,npmignore,yaml,yml,browserslist,Makefile,makefile}' text
 
 ## HEROKU
-'Procfile'    text
+'Procfile'    text eol=lf
 '.slugignore' text
 
 ## GRAPHICS
-'*.(ai|bmp|eps|gif|ico|jng|jp2|jpg|jpeg|jpx|jxr|pdf|png|psb|psd|svgz|tif|tiff|wbmp|webp)' binary
-'*.svg'       text
+'*.{ai,bmp,eps,gif,ico,jng,jp2,jpg,jpeg,jpx,jxr,pdf,png,psb,psd,svgz,tif,tiff,wbmp,webp}' binary diff
+'*.svg'       text eol=lf
 
 ## AUDIO
-'*.(kar|m4a|mid|midi|mp3|ogg|ra)' binary
+'*.{kar,m4a,mid,midi,mp3,ogg,ra}' binary diff
 
 ## VIDEO
-'*.(3gpp|3gp|as|asf|asx|fla|flv|m4v|mng|mov|mp4|mpeg|mpg|ogv|swc|swf|webm)' binary
+'*.{3gpp,3gp,as,asf,asx,fla,flv,m4v,mng,mov,mp4,mpeg,mpg,ogv,swc,swf,webm}' binary diff
 
 ## ARCHIVES
-'*.(7z|gz|jar|rar|tar|zip)' binary
+'*.{7z,gz,jar,rar,tar,zip}' binary diff
 
 ## FONTS
-'*.(ttf|eot|otf|woff|woff2)' binary
+'*.{ttf,eot,otf,woff,woff2}' binary diff
 
 ## EXECUTABLES
-'*.(exe|pyc)' binary
+'*.{exe,pyc}' binary diff
+
