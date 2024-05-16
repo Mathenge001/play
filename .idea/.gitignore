@@ -1,13 +1,16 @@
-# Default ignored files
+# This is a list of files and directories that should be ignored by version control systems.
+
+# Shelf directory contains user-specific temporary files.
 /shelf/
+
+# Workspace.xml file contains user-specific workspace settings.
 /workspace.xml
 
-# Editor-based HTTP Client requests
+# HttpRequests directory contains HTTP client requests made from the editor. These requests may contain sensitive information and should not be shared.
 /httpRequests/
 
-# Datasource local storage ignored files
+# DataSources local storage file contains local data sources configuration. It is specific to each user's machine and should not be shared.
 /dataSources/dataSources.local.xml
 
-# Zeppelin ignored files
+# Zeppelin Remote Notebooks directory contains notebooks that are shared between different Zeppelin instances. These notebooks should not be version-controlled to avoid conflicts.
 /ZeppelinRemoteNotebooks/
-
