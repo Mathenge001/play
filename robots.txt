@@ -1,5 +1,21 @@
-# www.robotstxt.org/
+# This is a generic robots.txt file that allows all crawlers to access all content.
+# For more information, please visit www.robotstxt.org
 
-# Allow crawling of all content
+# Allow all crawlers to access all content
 User-agent: *
 Disallow:
+
+# If you want to block specific crawlers or disallow access to certain content,
+# uncomment and modify the lines below.
+
+# Disallow all crawlers from a specific user-agent
+# User-agent: BadCrawler
+# Disallow: /
+
+# Disallow access to a specific directory
+# User-agent: *
+# Disallow: /private/
+
+# Disallow access to a specific file
+# User-agent: *
+# Disallow: /secret-file.txt
