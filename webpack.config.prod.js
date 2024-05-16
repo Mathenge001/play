@@ -5,6 +5,28 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  module: {
+    rules: [
+      // Add any necessary loaders here
+    ]
+  },
+  devtool: 'source-map',
+  optimization: {
+    minimize: true,
+    usedExports: true,
+  },
+  performance: {
+    hints: 'warning',
+    maxAssetSize: 300000,
+    maxEntrypointSize: 500000,
+  },
+  stats: {
+    assetsSort: '!size',
+    children: false,
+    modules: false,
+    chunks: false,
+    chunkModules: false,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -24,3 +46,4 @@ module.exports = merge(common, {
     }),
   ],
 });
+
