@@ -5,8 +5,6 @@
   --card-width: 300px;
   --card-height: 500px;
   --card-perspective: 1000px;
-  --font-size: 16px;
-  --spacing: 10px;
 }
 
 body {
@@ -28,16 +26,16 @@ body {
   width: var(--card-width);
   height: var(--card-height);
   perspective: var(--card-perspective);
-  margin: var(--spacing);
+  margin: 10px 10px;
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: transform 0.5s;
 }
 
-.card.flip {
-  transform: translateX(-50%) rotateY(-180deg);
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
 }
 
 .card-inner {
@@ -45,7 +43,6 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.5s;
 }
 
 .card-front,
@@ -77,9 +74,9 @@ body {
   object-fit: cover;
 }
 
-.card-front .card-title {
+.card-front p {
   position: absolute;
-  bottom: var(--spacing);
+  bottom: 10px;
   left: 20px;
   right: 20px;
   text-align: center;
@@ -87,36 +84,9 @@ body {
   color: #fff;
   margin: 0;
   padding: 10px;
-  font-size: var(--font-size);
 }
 
-.card-back .card-title {
-  position: absolute;
-  bottom: 115px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #ffffff;
-  margin: 0;
-  padding: 10px;
-  font-size: var(--font-size);
-}
-
-.card-front .card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: rgb(44, 44, 49);
-  color: #fff;
-  margin: 0;
-  padding: 10px;
-  font-size: var(--font-size);
-}
-
-.card-back .card-content {
+.card-back p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -125,19 +95,14 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
   margin: 0;
-  padding: 10px;
-  font-size: var(--font-size);
+  padding: 115px;
 }
 
-.button-container {
-  position: absolute;
-  bottom: var(--spacing);
+.arrow-container {
+  position: fixed;
+  bottom: 20px;
   width: 100%;
   text-align: center;
-}
-
-.button-spacing {
-  margin: 0 10px;
 }
 
 .arrow-button,
@@ -147,9 +112,10 @@ body {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: var(--font-size);
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .arrow-button:hover,
@@ -164,4 +130,3 @@ body {
 .next-arrow {
   right: 0;
 }
-

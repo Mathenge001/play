@@ -1,27 +1,23 @@
 const CARD_SELECTOR = '.card';
 const AUDIO_SELECTOR = 'audio';
 const CARD_CONTAINER_ID = 'cardContainer';
-const NAV_PREV_SELECTOR = '.nav-prev';
-const NAV_NEXT_SELECTOR = '.nav-next';
-const SHUFFLE_SELECTOR = '.shuffle';
-const BACK_SELECTOR = '.back';
-const CARD_FLIP_CLASS = 'is-flipped';
-
-const cardContainer = document.getElementById(CARD_CONTAINER_ID);
-const navBtns = { prev: document.querySelector(NAV_PREV_SELECTOR), next: document.querySelector(NAV_NEXT_SELECTOR) };
-const shuffleBtn = document.querySelector(SHUFFLE_SELECTOR);
-const backBtn = document.querySelector(BACK_SELECTOR);
-const audios = document.querySelectorAll(AUDIO_SELECTOR);
+const PREV_ARROW_SELECTOR = '.prev-arrow';
+const NEXT_ARROW_SELECTOR = '.next-arrow';
+const SHUFFLE_BUTTON_SELECTOR = '.shuffle-button';
+const BACK_BUTTON_SELECTOR = '.back-button';
 
 let currentCardIndex = 0;
 const cards = Array.from(document.querySelectorAll(CARD_SELECTOR));
-const cardDeck = Array.from(cardContainer.children);
+const cardDeck = document.querySelectorAll('.card-deck .card');
+const cardContainer = document.querySelector('.card-container');
+const audios = Array.from(document.querySelectorAll(AUDIO_SELECTOR));
 const cardHistory = [currentCardIndex];
 let historyPointer = 0;
 
+// Flip the current card to the next or previous one
 function flipCard(isNext) {
   const currentCard = cardDeck[currentCardIndex];
-  currentCard.classList.remove(CARD_FLIP_CLASS);
+  currentCard.style.display = 'none';
 
   if (isNext) {
     currentCardIndex = (currentCardIndex + 1) % cardDeck.length;
@@ -30,11 +26,16 @@ function flipCard(isNext) {
   }
 
   const nextCard = cardDeck[currentCardIndex];
-  nextCard.classList.add(CARD_FLIP_CLASS);
+  nextCard.style.display = 'block';
 }
 
+// Shuffle the card deck
 function shuffleDeck() {
-  const shuffledDeck = cardDeck.slice().sort(() => Math.random() - 0.5);
+  const shuffledDeck = [...cardDeck];
+  for (let i = shuffledDeck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledDeck[i], shuffledDeck[j]] = [shuffledDeck[j], shuffledDeck[i]];
+  }
   while (cardContainer.firstChild) {
     cardContainer.removeChild(cardContainer.firstChild);
   }
@@ -45,6 +46,7 @@ function shuffleDeck() {
   showCard(currentCardIndex);
 }
 
+// Reset the audio to the beginning
 function resetAudio() {
   audios.forEach(audio => {
     audio.pause();
@@ -52,26 +54,29 @@ function resetAudio() {
   });
 }
 
+// Show the card at the given index
 function showCard(index) {
   cards.forEach((card, idx) => {
-    card.style.display = idx === index ? 'block' : 'none';
+    card.style.display = idx === index? 'block' : 'none';
   });
   resetAudio();
 }
 
+// Toggle the flip animation for the current card
 function toggleCard() {
   const currentCard = cardDeck[currentCardIndex];
-  if (currentCard.classList.contains(CARD_FLIP_CLASS)) {
+  if (currentCard.classList.contains('flip')) {
     currentCardIndex = (currentCardIndex + 1) % cards.length;
     cardHistory = cardHistory.slice(0, historyPointer + 1);
     cardHistory.push(currentCardIndex);
     historyPointer++;
     showCard(currentCardIndex);
   } else {
-    currentCard.classList.add(CARD_FLIP_CLASS);
+    currentCard.classList.toggle('flip');
   }
 }
 
+// Move to the previous card
 function prevCard() {
   if (historyPointer > 0) {
     historyPointer--;
@@ -81,6 +86,7 @@ function prevCard() {
   }
 }
 
+// Move to the next card
 function nextCard() {
   if (historyPointer < cardHistory.length - 1) {
     historyPointer++;
@@ -95,12 +101,16 @@ function nextCard() {
   }
 }
 
+// Unflip all cards
 function unflipCard() {
-  cardDeck.forEach(card => card.classList.remove(CARD_FLIP_CLASS));
+  cardDeck.forEach(card => card.classList.remove('flip'));
 }
 
+// Initialize the card deck
 function initializeDeck() {
-  cardContainer.innerHTML = '';
+  while (cardContainer.firstChild) {
+    cardContainer.removeChild(cardContainer.firstChild);
+  }
   cards.forEach(card => cardContainer.appendChild(card));
   currentCardIndex = 0;
   cardHistory = [currentCardIndex];
@@ -108,27 +118,32 @@ function initializeDeck() {
   showCard(currentCardIndex);
 }
 
+// Add event listeners to the cards
 function addCardListeners() {
   cards.forEach(card => {
     card.addEventListener('click', toggleCard);
   });
 }
 
+// Add event listeners to the navigation buttons
 function addButtonListeners() {
-  Object.values(navBtns).forEach(btn => btn.addEventListener('click', e => e.target.dataset.direction === 'prev' ? prevCard() : nextCard()));
-  shuffleBtn.addEventListener('click', shuffleDeck);
-  backBtn.addEventListener('click', shuffleDeck);
+  const prevArrow = document.querySelector(PREV_ARROW_SELECTOR);
+  const nextArrow = document.querySelector(NEXT_ARROW_SELECTOR);
+  const shuffleButton = document.querySelector(SHUFFLE_BUTTON_SELECTOR);
+  const backButton = document.querySelector(BACK_BUTTON_SELECTOR);
+
+  prevArrow.addEventListener('click', prevCard);
+  nextArrow.addEventListener('click', nextCard);
+  shuffleButton.addEventListener('click', shuffleDeck);
+  backButton.addEventListener('click', shuffleDeck);
 }
 
-function disableNavButtons(disable) {
-  Object.values(navBtns).forEach(btn => btn.disabled = disable);
-}
-
+// Initialize the card deck and add event listeners
 initializeDeck();
 addCardListeners();
 addButtonListeners();
-disableNavButtons(cards.length < 2);
 
+// Intersection Observer for lazy loading
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -142,9 +157,17 @@ cards.forEach((card) => {
   observer.observe(card);
 });
 
+// Disable/enable navigation buttons based on the number of cards
 window.addEventListener('DOMContentLoaded', () => {
-  disableNavButtons(cards.length < 2);
+  const prevArrow = document.querySelector(PREV_ARROW_SELECTOR);
+  const nextArrow = document.querySelector(NEXT_ARROW_SELECTOR);
+  if (cards.length > 1) {
+    nextArrow.disabled = false;
+  } else {
+    prevArrow.disabled = true;
+    nextArrow.disabled = true;
+  }
 });
 
+// Reset audio when the window loads
 window.addEventListener('load', resetAudio);
-

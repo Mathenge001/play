@@ -1,159 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    /* Base styles: opinionated defaults */
-    html {
-      color: #222;
-      font-size: 1em;
-      line-height: 1.4;
-    }
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
-    hr {
-      display: block;
-      height: 1px;
-      border: 0;
-      border-top: 1px solid #ccc;
-      margin: 1em 0;
-      padding: 0;
-    }
+/* Base styles: opinionated defaults */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
 
-    audio,
-    canvas,
-    iframe,
-    img,
-    svg,
-    video {
-      vertical-align: middle;
-    }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-    fieldset {
-      border: 0;
-      margin: 0;
-      padding: 0;
-    }
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
 
-    textarea {
-      resize: vertical;
-    }
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
-    /* Author's custom styles */
+textarea {
+  resize: vertical;
+}
 
-    /* Helper classes */
-    .hidden,
-    [hidden] {
-      display: none !important;
-    }
+/* Author's custom styles */
 
-    .visually-hidden {
-      position: absolute;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      border: 0;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 0;
-    }
+/* Helper classes */
+.hidden,
+[hidden] {
+  display: none !important;
+}
 
-    .visually-hidden.focusable:active,
-    .visually-hidden.focusable:focus {
-      clip: auto;
-      height: auto;
-      margin: 0;
-      overflow: visible;
-      position: static;
-      white-space: inherit;
-      width: auto;
-    }
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
-    .invisible {
-      visibility: hidden;
-    }
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
 
-    .clearfix::before,
-    .clearfix::after {
-      content: "";
-      display: table;
-    }
+.invisible {
+  visibility: hidden;
+}
 
-    .clearfix::after {
-      clear: both;
-    }
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
 
-    /* EXAMPLE Media Queries for Responsive Design */
-    @media (min-width: 35em) {
-      /* Style adjustments for viewports that meet the condition */
-    }
+.clearfix::after {
+  clear: both;
+}
 
-    @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-      /* Style adjustments for high resolution devices */
-    }
+/* EXAMPLE Media Queries for Responsive Design */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
 
-    /* Print styles */
-    @media print {
-      * {
-        background: #fff !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-      }
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
-      a,
-      a:visited {
-        text-decoration: underline;
-      }
+/* Print styles */
+@media print {
+  * {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-      a[href]::after {
-        content: " (" attr(href) ")";
-      }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-      abbr[title]::after {
-        content: " (" attr(title) ")";
-      }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
 
-      a[href^="#"]::after,
-      a[href^="javascript:"]::after {
-        content: "";
-      }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
 
-      pre {
-        white-space: pre-wrap !important;
-      }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
 
-      pre,
-      blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-      }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-      tr,
-      img {
-        page-break-inside: avoid;
-      }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-      p,
-      h2,
-      h3 {
-        orphans: 3;
-        widows: 3;
-      }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-      h2,
-      h3 {
-        page-break-after: avoid;
-      }
-    }
-  </style>
-</head>
-<body>
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-</body>
-</html>
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

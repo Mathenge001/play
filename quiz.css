@@ -8,7 +8,7 @@ body {
 /* Use a more suitable background image for better visibility */
 body {
   font-family: "JetBrains Mono ExtraBold", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   background-image: url('https://source.unsplash.com/random/1600x900');
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,8 +33,7 @@ body {
   cursor: pointer;
 }
 
-.card:hover,
-.card.active {
+.card:hover {
   transform: scale(1.02);
 }
 
@@ -47,8 +46,6 @@ body {
   height: 100%;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.56);
-  transition: backface-visibility 0.5s ease;
-  backface-visibility: hidden;
 }
 
 .card-inner {
