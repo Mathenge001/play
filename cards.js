@@ -1,26 +1,30 @@
 let currentCardIndex = 0;
 const cards = document.querySelectorAll('.card');
 
-function showCard(index) {
+if (cards.length === 0) {
+  console.error('No cards found');
+  return;
+}
+
+const showCard = (index) => {
   cards.forEach((card, idx) => {
+    card.style.transition = 'transform 0.6s';
     if (idx === index) {
+      card.style.transform = 'rotateY(0deg)';
       card.style.display = 'block';
     } else {
+      card.style.transform = 'rotateY(180deg)';
       card.style.display = 'none';
     }
   });
 }
 
-function toggleCard() {
-  // Check if the card is already flipped
+const toggleCard = () => {
   if (this.classList.contains('flip')) {
-    // If flipped, show the next card
     currentCardIndex = (currentCardIndex + 1) % cards.length;
-    showCard(currentCardIndex);
-  } else {
-    // If not flipped, flip the card
-    this.classList.toggle('flip');
   }
+  this.classList.toggle('flip');
+  showCard(currentCardIndex);
 }
 
 showCard(currentCardIndex); // Show the initial card
@@ -28,3 +32,16 @@ showCard(currentCardIndex); // Show the initial card
 cards.forEach(card => {
   card.addEventListener('click', toggleCard);
 });
+
+
+
+.card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
