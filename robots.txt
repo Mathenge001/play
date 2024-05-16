@@ -1,19 +1,5 @@
-# robots.txt
+# www.robotstxt.org/
 
-# Allow all crawlers to access all content
+# Allow crawling of all content
 User-agent: *
 Disallow:
-
-# Block specific crawlers or disallow access to certain content as needed
-
-# Block a specific crawler
-# User-agent: BadCrawler
-# Disallow: /
-
-# Block access to a specific directory
-# User-agent: *
-# Disallow: /private/
-
-# Block access to a specific file
-# User-agent: *
-# Disallow: /secret-file.txt
