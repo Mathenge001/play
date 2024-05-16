@@ -1,5 +1,12 @@
 let currentCardIndex = 0;
-const cards = document.querySelectorAll('.card');
+const cardsContainer = document.querySelector('.cards-container');
+
+if (!cardsContainer) {
+  console.error('No cards container found');
+  return;
+}
+
+const cards = Array.from(cardsContainer.querySelectorAll('.card'));
 
 if (cards.length === 0) {
   console.error('No cards found');
@@ -8,40 +15,36 @@ if (cards.length === 0) {
 
 const showCard = (index) => {
   cards.forEach((card, idx) => {
-    card.style.transition = 'transform 0.6s';
-    if (idx === index) {
-      card.style.transform = 'rotateY(0deg)';
-      card.style.display = 'block';
-    } else {
-      card.style.transform = 'rotateY(180deg)';
-      card.style.display = 'none';
-    }
+    card.classList.toggle('flip', idx === index);
   });
 }
 
-const toggleCard = () => {
-  if (this.classList.contains('flip')) {
-    currentCardIndex = (currentCardIndex + 1) % cards.length;
+const handleCardClick = (event) => {
+  const clickedCard = event.target.closest('.card');
+
+  if (!clickedCard || clickedCard.classList.contains('flip')) {
+    return;
   }
-  this.classList.toggle('flip');
+
+  currentCardIndex = (currentCardIndex + 1) % cards.length;
   showCard(currentCardIndex);
 }
 
 showCard(currentCardIndex); // Show the initial card
 
-cards.forEach(card => {
-  card.addEventListener('click', toggleCard);
-});
-
-
+cardsContainer.addEventListener('click', handleCardClick);
 
 .card {
   transform-style: preserve-3d;
   backface-visibility: hidden;
   transition: transform 0.6s;
+  cursor: pointer;
 }
 
 .card.flip {
   transform: rotateY(180deg);
 }
 
+<div class="cards-container">
+  <!-- Add .card elements here -->
+</div>
