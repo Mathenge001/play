@@ -1,32 +1,11 @@
-# .editorconfig
+# editorconfig.org
 
-# This file contains configuration settings for EditorConfig.
-# For more information about EditorConfig, please visit:
-# https://editorconfig.org
-
-# top-most EditorConfig file
 root = true
 
-# Uncomment the lines below to apply the settings to all files in the project
-# [*]
-# charset = utf-8
-# end_of_line = lf
-# indent_size = 2
-# indent_style = space
-# insert_final_newline = true
-# trim_trailing_whitespace = true
-
-# You can also specify settings for specific file types:
-# [*.{js,json}]
-# charset = utf-8
-# indent_size = 2
-# indent_style = space
-
-# [*.css]
-# end_of_line = lf
-# indent_size = 2
-# indent_style = space
-
-# [*.{html,xml}]
-# insert_final_newline = true
-# trim_trailing_whitespace = true
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true

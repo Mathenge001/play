@@ -1,59 +1,6 @@
-# This file is to specify intentionally untracked files that Git should ignore.
-# Read more about .gitignore: https://help.github.com/articles/ignoring-files
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
-
-# dependencies
-/node_modules/
-
-# production
-/dist/
-
-# cache
-.cache/
-
-# Log files
-logs/
-
-# OS specific files
-.DS_Store
-Thumbs.db
-
-# Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-
-# IDE specific files
-*.sublime-workspace
-
-# Compiled files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.out
-
-# Package generated files & directories
-package-lock.json
-npm-debug.log
-
-# Python specific files
-*.py[co]
-__pycache__/
-*.pyc
-
-# Environment variables
-.env
-.env.example
-
-# Gradle specific files
-.gradle/
-build/
-
-# Yarn specific files
-yarn-debug.log
-yarn-error.log
+node_modules
+dist
+.cache
