@@ -5,8 +5,8 @@ module.exports = {
     app: './js/app.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/js'),
     clean: true,
-    filename: './js/app.js',
+    filename: 'app.js',
   },
 };
