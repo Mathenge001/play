@@ -9,10 +9,11 @@
 <body>
   <!-- Buttons -->
 <div class="button-container">
-  <button onclick="viewHistory()">View History</button>
-  <button onclick="reshuffleDeck()">Reshuffle</button>
+  <button onclick="window.location.href='quiz.html'">Back to Home</button>
 </div>
-
+    <div class="arrow-container" id="back">
+    <button class="prev-arrow" onclick="flipCard(false)">&#8592;</button>
+ </div>
 <!-- Card container -->
 <div class="card-container">
 
@@ -3847,10 +3848,14 @@
 
     <!-- Repeat for each card -->
   </div>
-  <div class="arrow-container">
-    <button class="prev-arrow" onclick="prevCard()">&lt; Prev</button>
-    <button class="next-arrow" onclick="nextCard()">Next &gt;</button>
-    <a href="index.html" class="back-button">Back to Home</a>
+<!-- <div class="arrow-container" id="back">-->
+<!--    <button class="prev-arrow" onclick="prevCard()">&lt; Prev</button>-->
+<!-- </div>-->
+  <div class="arrow-container" id="next">
+     <button class="next-arrow" onclick="flipCard(true)">&#8594;</button>
+  </div>
+  <div class="arrow-container" id="shuffle">
+    <button class="back-button" onclick="shuffleDeck()">Shuffle</button>
   </div>
   <script src="cards.js"></script>
 </body>
