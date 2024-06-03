@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flags Game</title>
+  <link rel="stylesheet" href="css/flags.css">
+</head>
+<body>
+  <h1>Flags Game</h1>
+   <div class="game-container" id="flags-container"></div>
+    <div class="button-container">
+    <button onclick="displayFlags('europe')">Europe</button>
+    <button onclick="displayFlags('north-america')">North America</button>
+    <button onclick="displayFlags('south-america')">South America</button>
+    <button onclick="displayFlags('africa')">Africa</button>
+    <button onclick="displayFlags('ocenia')">Oceania</button>
+    <button onclick="displayFlags('asia')">Asia</button>
+  <button onclick="displayFlags('antarctica')">Antarctica</button>
+    <button onclick="selectRandomCategory()">Random Category</button>
+  </div>
+
+
+ <!--  <div id="flags-container"></div> -->
+    <button onclick="backToHome()">Back to Home</button>
+
+  <script src="js/flags.js"></script>
+</body>
+</html>
