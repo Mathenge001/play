@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="description" content="PartyPlay — trivia, challenges, flags and music in one fast party game.">
+  <title>PartyPlay — Pick a game. Pass the phone.</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark">P</span><span>PartyPlay</span></a>
+    <div class="nav-actions">
+      <button class="pill" id="musicSettingsBtn" type="button">♫ <span>Music</span></button>
+      <button class="pill" id="sessionBtn" type="button">◎ <span>Players</span></button>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> No app install. One screen. Everyone plays.</div>
+        <h1>Pick a game.<br><span class="gradient-text">Pass the phone.</span></h1>
+        <p class="lede">Trivia, wild challenges, flags and music rounds built for the room you’re already in. Set your players once, choose a deck, then tap, guess, reveal and keep score.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="quiz.html">Start trivia →</a>
+          <a class="secondary-btn" href="#games">See all games</a>
+        </div>
+        <div class="hero-note">Tip: use ← / → to move cards and Space to reveal on desktop.</div>
+      </div>
+      <div class="hero-stack" aria-hidden="true">
+        <div class="preview-card three"></div>
+        <div class="preview-card two"></div>
+        <div class="preview-card">
+          <div class="preview-content">
+            <span class="preview-kicker">Now playing • trivia</span>
+            <div class="preview-emoji">🎧</div>
+            <p class="preview-title">Can your team name the song before the chorus?</p>
+            <div class="preview-footer"><span>Tap to reveal</span><span class="swipe">→</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-head">
+        <div><h2>Choose your chaos.</h2><p class="section-copy">Every mode now uses the same reliable game engine, session scoring and mobile-friendly controls.</p></div>
+      </div>
+      <div class="mode-grid">
+        <a class="mode-card" href="quiz.html" style="--glow:#ff5f6d"><span class="mode-icon">🧠</span><h3>Trivia Mix</h3><p>Hundreds of questions across music, pop culture, geography, history and more.</p><div class="mode-meta"><span>345+ cards</span><span class="arrow">↗</span></div></a>
+        <a class="mode-card" href="cards.html" style="--glow:#ffc371"><span class="mode-icon">🎭</span><h3>Challenges</h3><p>Dares, mini-games, impressions and room-energy cards for party mode.</p><div class="mode-meta"><span>145+ cards</span><span class="arrow">↗</span></div></a>
+        <a class="mode-card" href="flags.html" style="--glow:#8b5cf6"><span class="mode-icon">🌍</span><h3>Flag Sprint</h3><p>Pick a region, guess the country, reveal, score and move straight to the next flag.</p><div class="mode-meta"><span>7 regions</span><span class="arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="music-strip">
+        <div><h3>Music without locking the game to one platform.</h3><p>Keep local clips where you own them, or launch the current song on Spotify, YouTube Music or YouTube. The provider is saved per device.</p></div>
+        <div class="provider-row"><span class="provider">● Spotify</span><span class="provider">▶ YouTube Music</span><span class="provider">▰ YouTube</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>PartyPlay • rebuilt game shell</span><span>Progress and player scores are stored only in this browser.</span></footer>
+
+  <div class="modal" id="sessionModal" role="dialog" aria-modal="true" aria-labelledby="sessionTitle">
+    <div class="modal-card"><div class="modal-head"><h3 id="sessionTitle">Set up players</h3><button class="icon-btn" data-close="sessionModal" aria-label="Close">×</button></div><p>Add names separated by commas. You can also play without players and use the decks casually.</p><div class="field"><label for="playerNames">Player names</label><input id="playerNames" placeholder="Lorna, Miriam, Jay"></div><div class="modal-actions"><button class="secondary-btn" data-close="sessionModal">Cancel</button><button class="primary-btn" id="savePlayersBtn">Save players</button></div></div>
+  </div>
+  <div class="modal" id="musicModal" role="dialog" aria-modal="true" aria-labelledby="musicTitle">
+    <div class="modal-card"><div class="modal-head"><h3 id="musicTitle">Music provider</h3><button class="icon-btn" data-close="musicModal" aria-label="Close">×</button></div><p>Choose where PartyPlay should search when a music card has no playable local clip or you want the full track.</p><div class="field"><label for="musicProvider">Preferred provider</label><select id="musicProvider"><option value="spotify">Spotify</option><option value="ytmusic">YouTube Music</option><option value="youtube">YouTube</option></select></div><p class="tiny">This version does not store provider passwords or API keys. It opens the official provider search for the card’s song/title.</p><div class="modal-actions"><button class="primary-btn" id="saveMusicBtn">Save preference</button></div></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
