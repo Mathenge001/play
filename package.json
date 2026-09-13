@@ -1,0 +1,15 @@
+{
+  "name": "partyplay",
+  "version": "1.1.0",
+  "private": true,
+  "description": "PartyPlay \u2014 local-first interactive play platform with optional temporary realtime rooms.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node server/live-server.mjs",
+    "dev": "node server/live-server.mjs",
+    "test": "node scripts/test.mjs",
+    "test:live": "node scripts/smoke-live.mjs"
+  }
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080914">
+  <title>Build your game • PartyPlay</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/platform.css">
+</head>
+<body class="setup-page">
+<header class="site-nav compact"><a class="brand" href="index.html"><span class="brand-mark">P</span><span>PartyPlay</span></a><div class="setup-progress"><span id="progressLabel">Game setup</span><span id="fitCount" class="tag">Checking games…</span></div></header>
+<main class="setup-shell">
+  <section class="setup-intro">
+    <div class="section-kicker">BUILD YOUR SESSION</div>
+    <h1>Tell PartyPlay what your room looks like.</h1>
+    <p>Players, teams and devices change which games make sense. PartyPlay will filter incompatible rounds before you start.</p>
+  </section>
+
+  <form id="setupForm" class="setup-form">
+    <section class="setup-card">
+      <div class="step-num">1</div><div class="step-body"><h2>How are you playing?</h2><p>Choose whether people compete individually or as teams.</p>
+      <div class="segmented" role="radiogroup" aria-label="Play style">
+        <label><input type="radio" name="playStyle" value="individual" checked><span>👤 Individuals</span></label>
+        <label><input type="radio" name="playStyle" value="teams"><span>👥 Teams</span></label>
+      </div>
+      <div id="individualEditor" class="roster-editor">
+        <div class="editor-head"><b>Players</b><button class="mini-btn" id="addPlayer" type="button">+ Add player</button></div>
+        <div id="playerRows" class="roster-rows"></div>
+      </div>
+      <div id="teamEditor" class="roster-editor hidden">
+        <div class="editor-head"><b>Teams</b><div class="editor-actions"><button class="mini-btn" id="shuffleTeams" type="button">Shuffle players</button><button class="mini-btn" id="addTeam" type="button">+ Add team</button></div></div>
+        <div id="teamRows" class="team-rows"></div>
+      </div></div>
+    </section>
+
+    <section class="setup-card">
+      <div class="step-num">2</div><div class="step-body"><h2>How many player devices are available?</h2><p>Do not count the TV/projector. This is used to hide games your setup cannot support.</p>
+      <div class="field-grid">
+        <label class="field"><span>Player devices</span><input id="deviceCount" type="number" min="1" max="50" value="1" inputmode="numeric"></label>
+        <label class="field"><span>Device sharing</span><select id="deviceMode"><option value="single">One shared device</option><option value="team">One device per team</option><option value="personal">One device per player</option><option value="mixed">Mixed / flexible</option></select></label>
+      </div>
+      <div class="toggle-grid">
+        <label class="toggle-row"><input id="hasTv" type="checkbox"><span><b>📺 TV / projector available</b><small>Enable big-screen presentation rounds.</small></span></label>
+        <label class="toggle-row"><input id="cameraAllowed" type="checkbox"><span><b>📷 Camera tasks allowed</b><small>Photos stay temporary for the current session.</small></span></label>
+        <label class="toggle-row"><input id="internetAvailable" type="checkbox" checked><span><b>🌐 Internet available</b><small>Needed for PartyPlay Live and external music providers.</small></span></label>
+      </div></div>
+    </section>
+
+    <section class="setup-card">
+      <div class="step-num">3</div><div class="step-body"><h2>Choose your game vibe.</h2><p>Pick one fast preset or build a custom mix.</p>
+      <div id="vibeGrid" class="choice-grid">
+        <label class="choice"><input type="radio" name="vibe" value="party" checked><span><b>🎉 Party Night</b><small>Balanced chaos</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="kenya"><span><b>🇰🇪 Kenyan Cocktail</b><small>Kenya across categories</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="brainrot"><span><b>😂 Brainrot</b><small>Memes & internet culture</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="smart"><span><b>🧠 Smart Night</b><small>Knowledge + puzzles</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="tasks"><span><b>🏆 Task Arena</b><small>Interactive challenges</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="learn"><span><b>🎓 Play & Learn</b><small>Kid-friendly learning</small></span></label>
+        <label class="choice"><input type="radio" name="vibe" value="custom"><span><b>🎛 Custom Mix</b><small>Choose exact packs</small></span></label>
+      </div>
+      <div id="customPacks" class="custom-packs hidden"></div><details class="category-tuner"><summary>Fine-tune categories <span>optional</span></summary><p class="tiny-copy">Leave everything unchecked to use all categories available in the selected pack.</p><div id="categoryFilters" class="custom-packs"></div><div class="editor-actions"><button id="clearCategories" class="mini-btn" type="button">Use all categories</button></div></details><div class="pack-import"><label class="field"><span>Import a PartyPlay pack (.json)</span><input id="customPackFile" type="file" accept="application/json,.json"></label><button id="downloadPackTemplate" class="mini-btn" type="button">Download pack template</button><small id="packImportStatus"></small></div></div>
+    </section>
+
+    <section class="setup-card">
+      <div class="step-num">4</div><div class="step-body"><h2>Set the pace.</h2>
+      <div class="field-grid three">
+        <label class="field"><span>Game length</span><select id="roundCount"><option value="10">Quick · 10 rounds</option><option value="20" selected>Party · 20 rounds</option><option value="30">Epic · 30 rounds</option><option value="40">Marathon · 40 rounds</option></select></label>
+        <label class="field"><span>Timing</span><select id="timerMode"><option value="untimed">Untimed</option><option value="relaxed">Relaxed</option><option value="standard" selected>Timed</option><option value="chaos">Chaos / speed</option></select></label>
+        <label class="field"><span>Difficulty</span><select id="difficulty"><option value="chill">Chill</option><option value="mixed" selected>Mixed</option><option value="hard">Savage</option><option value="adaptive">Adaptive</option></select></label>
+      </div>
+      <div class="toggle-grid compact-toggles">
+        <label class="toggle-row"><input id="speedScoring" type="checkbox" checked><span><b>⚡ Speed bonus</b><small>Correctness first, then response speed.</small></span></label>
+        <label class="toggle-row"><input id="steals" type="checkbox" checked><span><b>🔁 Steals</b><small>Allow another player/team to steal selected rounds.</small></span></label>
+        <label class="toggle-row"><input id="partyDirector" type="checkbox" checked><span><b>🎬 Party Director</b><small>Balance thinking, physical, social and comeback rounds.</small></span></label>
+      </div></div>
+    </section>
+
+    <section class="setup-card" id="riskSettings">
+      <div class="step-num">5</div><div class="step-body"><h2>Risk, wagers & awards <span class="optional">optional</span></h2><p>Wagers use virtual game points only. PartyPlay never takes, holds or pays out real money.</p>
+      <div class="field-grid three">
+        <label class="field"><span>Wagering</span><select id="wagerMode"><option value="off">Off</option><option value="final">Final round only</option><option value="special" selected>Special rounds</option><option value="full">Every eligible round</option></select></label>
+        <label class="field"><span>Maximum risk</span><select id="wagerMax"><option value="0.25">25% of round value</option><option value="0.5" selected>50% of round value</option><option value="1">100% / all-in</option></select></label>
+        <label class="field"><span>Winner prize / award</span><input id="winnerPrize" maxlength="80" placeholder="e.g. Trophy, dinner, bragging rights"></label>
+      </div>
+      <div class="toggle-grid compact-toggles">
+        <label class="toggle-row"><input id="recognitionAwards" type="checkbox" checked><span><b>🏅 Recognition awards</b><small>Show awards such as Most Correct, Fastest and Biggest Risk Taker at the end.</small></span></label>
+      </div>
+      <p class="tiny-copy">Correct wager: bonus points. Wrong wager: the risk portion is deducted. Scores never go below zero.</p>
+      </div>
+    </section>
+
+    <section class="setup-card" id="learnSettings">
+      <div class="step-num">6</div><div class="step-body"><h2>Learning level <span class="optional">optional</span></h2><p>Used only for Play & Learn content.</p>
+      <div class="field-grid">
+        <label class="field"><span>Level</span><select id="learnLevel"><option value="early">Early learner</option><option value="lower">Lower primary</option><option value="upper" selected>Upper primary</option><option value="junior">Junior secondary</option><option value="teen">Teen challenge</option></select></label>
+        <label class="field"><span>Focus</span><select id="learnFocus"><option value="mixed">Mixed learning</option><option value="maths">Maths</option><option value="science">Science</option><option value="geography">Geography</option><option value="memory">Memory</option></select></label>
+      </div></div>
+    </section>
+
+    <section class="setup-card compatibility-card">
+      <div class="step-num">✓</div><div class="step-body"><h2>Compatibility check</h2><div id="compatibilitySummary" class="compat-summary"></div></div>
+    </section>
+
+    <div class="setup-actions">
+      <button type="button" id="savePreset" class="btn secondary">Save setup</button>
+      <button type="submit" id="startLocal" class="btn primary">Start on this device →</button>
+      <button type="button" id="startLive" class="btn live-btn">⚡ Host PartyPlay Live</button>
+    </div>
+    <p id="setupError" class="form-error" role="alert"></p>
+  </form>
+</main>
+<script src="js/content.js"></script>
+<script src="js/core.js"></script>
+<script src="js/setup.js"></script>
+</body>
+</html>

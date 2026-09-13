@@ -1,0 +1,2330 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090e"><title>Challenges • PartyPlay</title><link rel="icon" href="../icon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/game.css"></head>
+<body data-mode="challenge"><div class="game-shell">
+<header class="topbar"><a class="brand" href="../index.html"><span class="brand-mark">P</span><span>PartyPlay</span></a><div class="game-title"><strong>Challenges</strong><span>Do it • judge it • pass it</span></div><div class="top-actions"><button class="ghost-btn" id="cycleProvider" type="button">♫ <span id="providerName">Spotify</span></button><button class="round-btn" id="openPlayers" type="button" title="Edit players">◎</button></div></header>
+<main class="game-main"><aside class="side-panel"><div class="panel"><div class="panel-label">Players & score</div><div class="players" id="playersList"></div></div></aside>
+<section class="deck-stage"><div class="progress-row"><span id="cardCounter">1 / 145</span><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><span id="turnName">Casual play</span></div><div class="card-container" id="cardContainer"><div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/23/f4/a0/23f4a0ea736b256d076215fff5b8d2e3.jpg"/>
+<p>Drop it like it's hot!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Serve us 10 squats queen</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/1d/51/1d/1d511d366c59dc47671860887234eb6b.jpg"/>
+<p>Rockstar moment!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Bust out your best air guitar solo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🏙️ Capital gains challenge!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name 5 capital cities.(shot for each lie)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌟 Impression extravaganza!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Do an impression of a celebrity.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐔 Bawk, bawk, boogie!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Do a chicken dance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p> 🌍 Foreign tunes challenge!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing the chorus of a song in a foreign language</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤓 Spell it backward! (someone else reads you the card)</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>a.supercalifragilisticexpialidocious.<br/>
+        b.Pneumonoultramicroscopicsilicovolcanoconiosis<br/>
+        c.Floccinaucinihilipilification</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p> 🦘 Hop it out!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Hop on one foot around the table.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📖 Five-word story!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Tell a story using only 3 words.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐠 Finding nemo!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name 4 animals that live in the ocean</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>✏️ Doodle time!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Draw a quick doodle of a mustache on your face blindfolded. make it impressive!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📚 Fairy tale challenge!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name 4 classic fairy tale characters</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>7️⃣ "Seven times</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Recite the multiplication table for the number 7</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>☁️ Cloud your sky!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name 3 types of clouds.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💃 Dance craze!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Invent a new dance move and demonstrate it to the group.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🦘🗣️ Hop'n twist </p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Hop on one foot while reciting a tongue twister.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎶🐯💃 Animal jam</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing the chorus of a song using only animal noises and dance like that animal.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤔🧘‍♂️ "Plank riddle time!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Solve a riddle while holding a plank.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🏋️‍♂️🏛️ Historical burpee</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Share a fun fact about a famous historical figure while doing 5 burpees</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💥🦩 Superpower balance talk</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half"> <p>Describe your dream superpower and how you'd use it while holding a one-legged balance</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐖🎶 "Piggyback Pop!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Give the person on your right a piggyback ride around the room while singing the chorus of a song</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>☠️ Hide the rum</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Do your best impersonation of a pirate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👑 Hey hitler</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make a rule</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🍔🎭 mh! mh!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a dramatic reading of a menu item</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💃🎵 Dance Off</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Have a dance-off where each player showcases their signature move!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>😂🍺1 mans laugh's another man drink</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Every time someone laughs, they must take a sip</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📏🍷Checking altitude</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>The tallest player must drink whenever a number is drawn!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>Check your height</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>(the tallest person drinks)<br/>
+        70</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌟🤘 rock on</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing 'Twinkle, Twinkle, Little Star' in a heavy metal style! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>⏰🤫 Take it out</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Choose someone to take a 'timeout' and sit in the corner for one round!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔄🥂 Girl next door.</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Everyone must swap drinks with the person on their left</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🍔🍦 Complex platter</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>What's the weirdest food combination you've ever tried?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📱😏 smooth operator</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Send a pickup line to a random contact in your phone!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📝⏱️ Think fast</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name items in a category without repeating or hesitating!(you pick)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌟🤔 guess who</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Write the name of a celebrity on a sticky note and stick it to your forehead. Guess who you are by asking yes/no questions! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎭🔄Reverse Charades</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>One person guesses while the rest of the group acts out the word! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>⏲️❓ rapid fire</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Answer as many questions as possible in 215 seconds!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>⛏️🍺 lost and found</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Whenever someone says 'mine,' they must drink!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤚😊 Nice guy</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>If someone touches their face, they must give a compliment to the person on their left! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🏴‍☠️🗣️ captain Sparrow!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>"Every time someone uses a word starting with the letter 'S,' they must speak in a pirate accent for the next round! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🍕🥤 hunger games</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Whenever someone mentions food, they must take a sip!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🅰️➡️🔄 show off</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Recite the alphabet backward as fast as you can!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤🤪 shame them</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Choose someone to sing a song in a funny accent!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📸😬 I'm just a child</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Share your most cringeworthy childhood photo!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p> 🕺💃 Michael Jackson</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Attempt to breakdance for 30 seconds!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p> 📱😳 Oooopsie!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Take a chat screenshot and send it to the same person.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤🍹Raw talent</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Freestyle a rap about what you're drinking!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>😂🎭 Impression Roulette</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Everyone does an impression, and the worst drinks!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤗🎶 I swear im not a clown.</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Players must use jazz hands whenever they speak!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>😏📢 Let's have it</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Choose someone to recite a cheesy pickup line to a stranger/someone in the group.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💬💃 Move your type.</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform an interpretive dance based on the last text message you received!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎩🃏 Abracadabra</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a magic trick with objects you find in the room!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤🧸 talk to us</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Give a heartfelt speech about your favorite inanimate object</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💭💃 I had a dream</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a 60-second interpretive dance about a recent dream you had! </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤹‍♂️🕒 welcome to the circus</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Attempt to juggle three objects for 20 seconds!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤫🗣️ Word sneak.(read alone)</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Incorporate a secret word into casual conversation!(they get it you drink. you get it they drink)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p> 🎭🤬 Hello poetry</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Anyone caught swearing must recite a Shakespearean insult!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🗣️🌍 tower of babel!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Players must speak in a foreign accent of their choice for the next round!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👑🎩 I crown thee!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>The person who drew the card must be addressed as 'Your Majesty' for the rest of the game!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎂🎶 let them eat cake</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing 'Happy Birthday' to yourself in a different language!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🖼️🤔 Paint me a picture!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Strike a pose and have others guess which famous painting you're imitating!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🚿 Waterfall!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Everyone starts drinking at the same time. You can’t stop until the person to your right stops.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤔 Two Truths and a Lie!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Tell two truths and one lie about yourself. If someone guesses the lie, you drink. If no one guesses, everyone else drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📱 Text Roulette!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Pick someone in the group. They choose a random contact from your phone. You must send a funny message of their choice.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🕺 Dance Off!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Challenge another player to a 30-second dance battle. Loser drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔄 Reverse!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Change the direction of the game. Whoever played last drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📚 Categories!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Pick a category (e.g., types of fruit). Go around the circle naming items in the category. First to hesitate or repeat drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎲 Dare!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a dare chosen by the last person to drink or take two drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🗣️ Rhyme Time!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Say a word. The next person must say a word that rhymes. Continue until someone hesitates or repeats. That person drinks.<br/>
+        (e.g cat, bat, rat, fat e.t.c)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤫 Mime Time!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Act out a scene without speaking. First person to guess correctly chooses someone to drink.T</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>↔️ Switch!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Swap seats with the person directly opposite you and take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎭 Impersonate!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Do an impression of another player/a famous person. The group guesses who it is. If they get it right, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>❓ Truth or Drink!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>The tallest person in the group asks you a question. If you don't answer you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🗯️ Jinx!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Say the first word that comes to mind. On the count of three, everyone else says the first word that comes to their mind. If two or more people say the same word, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Sing Along!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing a line from a song. The first person to correctly guess the song picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👏 Compliment Battle!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Give a compliment to the person on your left. They must return a compliment. First to fail or repeat a compliment drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎯 Quick Draw!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name any object. The first person to grab an object that starts with the same letter wins. Loser drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐾 Animal Sounds!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make the sound of an animal. The first person to guess it correctly picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👯‍♂️ Pick a Buddy!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Choose someone to be your drinking buddy for the next round. If you drink, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🦸 Superhero!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Create a superhero name and power for yourself. The group votes on the best one. Loser drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🃏 Joker's Wild!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make up a rule that everyone must follow until the next Joker's Wild card is drawn. If someone breaks the rule, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔍 Detective!(read alone)</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Ask another player a yes or no question. If they answer "no," you drink. If they answer "yes," they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📣 Shout Out!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Stand up and make an announcement or toast. If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👑 King or Queen!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>You are now the king/queen. Everyone must address you as "Your Majesty" or take a drink each time they fail.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎨 Picaso!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Draw something on a piece of paper. The first person to guess what it is picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔊 Whisper!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Whisper a message to the person next to you. They must whisper it to the next person, and so on. The last person says it out loud. If it's correct, you drink. If it's wrong, everyone else drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🛑 Stop!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Call out a body part (e.g., nose). Everyone must touch that body part. The last person to do so drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌍 World Tour!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name a country. Go around the circle naming cities in that country. First to hesitate or repeat drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📷 Photo Bomb!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Take a funny group photo. If anyone refuses to participate, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🧙‍♂️ Magic!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a magic trick. If it fails, you drink. If it succeeds, you pick someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🕺 Strike a Pose!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Strike a funny pose. The group must mimic you. The last person to do so drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>Third card text here.</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Third back card text here.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌀 Dizzy!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Spin around in a circle five times and then walk in a straight line. If you stumble, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎯 Bullseye!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Throw a small object into a container from a distance. If you miss, you drink. If you make it, pick someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐍 Snake!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Hiss like a snake and point to another player. They must continue the hissing chain. The first to fail drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎬 Movie Buff!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name a movie. Go around the circle naming actors from that movie. First to hesitate or repeat drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔤 Alphabet Game!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Pick a category (e.g., animals) and go around the circle naming items in that category in alphabetical order. First to hesitate or repeat drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📅 Throwback!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Share an embarrassing story from your past. If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🍿 Movie Quote!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Say a quote from a movie. The first person to guess the movie picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🃏 Joker's Wild!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make up a rule that everyone must follow until the next Joker's Wild card is drawn. If someone breaks the rule, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🧠 Memory Test!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name three items. Each person must repeat the items in order and add one more. First to forget or mix up the order drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎶 Beatbox!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Perform a beatbox rhythm for 10 seconds. If the group approves, pick someone to drink. If they disapprove, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💃 Dance Freeze!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Everyone starts dancing. When you shout "Freeze!" everyone must stop. The last person to freeze drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🧛 Vampire!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>For the next round, you can only speak by whispering. Anyone who speaks normally drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Karaoke!(Read alone)</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing the chorus of a popular song. If the group joins in, they all drink. If they don't, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👁️ Eye Spy!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Say "I spy with my little eye..." and describe something in the room. The first person to guess it correctly picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📞 Prank Call!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make a prank call to a friend not playing the game. If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌟 Superpower!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Invent a superpower and demonstrate it. The group votes on how funny it is. If they laugh, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💄 Makeover!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Give a mini makeover (e.g., apply lipstick or eyeliner). If you/they refuse, you/they take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🧦 Sock Swap!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Swap socks with another player for the next round. If you refuse, take a drink.No socks? Drink 2.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🕺 Disco Fever!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Do your best disco dance move. If the group loves it, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Voice Actor!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Speak in a cartoon character's voice for the next round. If you break character, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👯 Twin!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Pick someone to be your twin for 3 rounds. Whatever you do, they must mimic. First to fail drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📢 Loudmouth!(read alone)</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Shout a random funny phrase. If the group laughs, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>T🌌 Space Cadet!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Pretend you’re floating in space for the next minute. If you stop or refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>😜 Silly Face!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make your silliest face. The group votes. If they laugh, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📚 Bookworm!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Quote a famous book line. The first person to guess the book picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤖 Robot!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Move and talk like a robot for the next round. If you forget or refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👂 Gossip!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Whisper a funny made-up rumor about someone in the group to another player. They decide whether to share it or not. If they share, they drink. If they keep it, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌞 Sunshine!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Compliment every player in the circle. If you skip anyone or refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🧘 Yoga Time!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Lead a short yoga pose. Everyone must follow. The last person to comply drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🍹 Cocktail Master!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Invent a new drink with the available ingredients. Everyone tries it. If they like it, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎲 Roll the Dice!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Roll a die. Whatever number you get, that’s how many drinks you take.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🤷 Never Have I Ever!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Say something you’ve never done. Anyone who has done it drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👣 Footsie!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Play a quick game of footsie with the person next to you. If they refuse, they drink. If you refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📺 TV Show!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Act out a scene from a TV show. First person to guess correctly picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🃏 Wild Card!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make up any rule you want that everyone must follow until the next Wild Card is drawn. If someone breaks the rule, they drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎲 Gamble!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Bet drinks on a quick game (e.g.,paper toss, coin flip,balloon pop, speed text, number gues from card deck, rock-paper-scissors). Loser drinks the bet amount.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👑 Royal Decree!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>As the "king/queen," make a decree everyone must follow until the next Royal Decree card is drawn. Breakers of the decree drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🐒 Monkey See!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Act like a monkey for the next minute. If you stop or refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎨 Leornado Da Vinci!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Draw something funny on someone’s face with a washable marker. If they refuse, they drink. If you refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🦜 Parrot!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Repeat everything the person to your left says until the next turn. If you forget or refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔦 Spotlight!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Share a hidden talent with the group. If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>📞 Call Out!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Call out someone who’s not playing the game and put them on speakerphone. If you refuse, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🌪️ Tornado!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Spin around five times and then point to someone. They drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🦸‍♂️ Hero Pose!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Strike a superhero pose and hold it for 10 seconds. If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🕵️‍♀️ Spy Games!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Secretly assign someone in the group a secret mission. If they fail, they drink. If they succeed, you drink.(via text/ a secret way)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>💄 Lip Sync!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p> Lip sync to a popular song for 30 seconds. If the group enjoys it, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🔙 Throwback Tune!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Sing a line from an old-school song. The first person to guess the song picks someone to drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>👑 Royal Gesture!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make a grand gesture (e.g., a bow or curtsy) to the "King/Queen". If you refuse, take a drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🚗 Road Trip!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Name a road trip destination. The group names places to visit on the way. First to hesitate or repeat drinks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Mic Drop!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make a bold statement and drop an imaginary mic. If the group finds it funny, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 CELEBRITY</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Place all your phones on the table, first player to get a notification takes a shot.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Double it!</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>You get to give a player of your choice double the shots you take.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-inner">
+<div class="card-front">
+<img alt="Front Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/48/ad/9c/48ad9cc17e2d086f9850deb5395f4da0.jpg"/>
+<p>🎤 Mr !</p>
+</div>
+<div class="card-back">
+<div class="top-half">
+<img alt="Back Image" decoding="async" loading="lazy" src="https://i.pinimg.com/564x/a7/12/c3/a712c3bdae30b775dce0cac104ef752d.jpg"/>
+</div>
+<div class="bottom-half">
+<p>Make a bold statement and drop an imaginary mic. If the group finds it funny, pick someone to drink. If not, you drink.</p>
+</div>
+</div>
+</div>
+</div></div><div class="tap-hint">Tap the card or press Space to reveal • Swipe or use arrows to move</div><div class="controls"><button class="control-btn" id="prevBtn" type="button" aria-label="Previous card">←</button><div class="center-controls"><button class="control-btn" id="revealBtn" type="button">Reveal</button><button class="control-btn success" id="scoreBtn" type="button">✓ Completed +1</button><button class="control-btn music" id="musicBtn" type="button" hidden>♫ <span class="desktop-label">Music</span></button></div><button class="control-btn primary" id="nextBtn" type="button" aria-label="Next card">→</button></div></section>
+<aside class="side-panel right-panel"><div class="panel"><div class="panel-label">Session</div><div class="stat"><span>Mode</span><strong id="modeStat">Challenges</strong></div><div class="stat"><span>Deck</span><strong id="deckStat">145 cards</strong></div><div class="small-stack"><button class="action-btn" id="shuffleBtn" type="button">↻ Shuffle deck</button><button class="action-btn" id="resetScoresBtn" type="button">Reset scores</button><a class="action-btn" href="../index.html" style="text-align:center;text-decoration:none">Change game</a></div></div></aside></main></div><div class="toast" id="toast" aria-live="polite"></div><div class="modal" id="playersModal" role="dialog" aria-modal="true" aria-labelledby="playersTitle"><div class="modal-card"><div class="modal-head"><h3 id="playersTitle">Players</h3><button class="close-x" type="button" data-close-players aria-label="Close">×</button></div><p>Add up to 12 names, separated by commas. Existing scores stay with matching names.</p><div class="field"><label for="playerNames">Player names</label><input id="playerNames" placeholder="Lorna, Miriam, Jay"></div><div class="modal-actions"><button class="btn action-btn" type="button" data-close-players>Cancel</button><button class="btn action-btn" type="button" id="savePlayers">Save players</button></div></div></div><script src="js/common-ui.js"></script><script src="js/game.js"></script></body></html>

@@ -2,74 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a0a0f">
-  <meta name="description" content="PartyPlay — trivia, challenges, flags and music in one fast party game.">
-  <title>PartyPlay — Pick a game. Pass the phone.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080914">
+  <meta name="description" content="PartyPlay — one screen, any crowd, any kind of game.">
+  <title>PartyPlay — One screen. Any crowd.</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/platform.css">
 </head>
 <body>
-  <div class="ambient"></div>
-  <nav class="nav">
+  <div id="appSplash" class="app-splash" aria-label="PartyPlay loading">
+    <div class="splash-wordmark">PartyPlay</div>
+    <div class="splash-field" aria-hidden="true"><i></i><i></i><i></i><i></i><span></span></div>
+    <p>Play. Think. Challenge. Connect.</p>
+    <div class="splash-progress"><span></span></div>
+  </div>
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <header class="site-nav">
     <a class="brand" href="index.html"><span class="brand-mark">P</span><span>PartyPlay</span></a>
-    <div class="nav-actions">
-      <button class="pill" id="musicSettingsBtn" type="button">♫ <span>Music</span></button>
-      <button class="pill" id="sessionBtn" type="button">◎ <span>Players</span></button>
-    </div>
-  </nav>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#packs">Packs</a><a href="#how">How it works</a><a href="classic/quiz.html">Classic decks</a>
+    </nav>
+    <a class="nav-cta" href="join.html">Join game</a>
+  </header>
+
   <main>
-    <section class="hero">
-      <div>
-        <div class="eyebrow"><span class="dot"></span> No app install. One screen. Everyone plays.</div>
-        <h1>Pick a game.<br><span class="gradient-text">Pass the phone.</span></h1>
-        <p class="lede">Trivia, wild challenges, flags and music rounds built for the room you’re already in. Set your players once, choose a deck, then tap, guess, reveal and keep score.</p>
+    <section class="hero-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> Local play + live multiplayer</div>
+        <h1>One screen.<br><span>Any crowd.</span><br>Any kind of game.</h1>
+        <p>Trivia, puzzles, Kenyan culture, music, photo tasks, social games and learning — with phones as controllers when you want the full game-show experience.</p>
         <div class="hero-actions">
-          <a class="primary-btn" href="quiz.html">Start trivia →</a>
-          <a class="secondary-btn" href="#games">See all games</a>
+          <a class="btn primary" href="setup.html?mode=party">Host a party</a>
+          <a class="btn secondary" href="setup.html?mode=quick">Quick play</a>
+          <a class="btn ghost" href="join.html">Join with code</a>
         </div>
-        <div class="hero-note">Tip: use ← / → to move cards and Space to reveal on desktop.</div>
+        <div class="micro-row"><span>✓ No account required</span><span>✓ Offline quick play</span><span>✓ No Supabase/database</span></div>
       </div>
-      <div class="hero-stack" aria-hidden="true">
-        <div class="preview-card three"></div>
-        <div class="preview-card two"></div>
-        <div class="preview-card">
-          <div class="preview-content">
-            <span class="preview-kicker">Now playing • trivia</span>
-            <div class="preview-emoji">🎧</div>
-            <p class="preview-title">Can your team name the song before the chorus?</p>
-            <div class="preview-footer"><span>Tap to reveal</span><span class="swipe">→</span></div>
-          </div>
+      <div class="hero-demo" aria-label="PartyPlay example round">
+        <div class="demo-top"><span>ROUND 7 / 20</span><span class="tag live">LIVE</span></div>
+        <div class="demo-turn"><strong>TEAM CHAOS</strong><span>Lorna's turn</span></div>
+        <div class="demo-card">
+          <div class="demo-kind">🇰🇪 KENYAN COCKTAIL · VISUAL</div>
+          <div class="demo-visual">🗿</div>
+          <h2>Name this Nairobi monument.</h2>
+          <div class="demo-timer">00:15</div>
         </div>
+        <div class="demo-score"><span>Chaos <b>4,820</b></span><span>Brainiacs <b>4,610</b></span></div>
       </div>
     </section>
 
-    <section class="section" id="games">
-      <div class="section-head">
-        <div><h2>Choose your chaos.</h2><p class="section-copy">Every mode now uses the same reliable game engine, session scoring and mobile-friendly controls.</p></div>
-      </div>
-      <div class="mode-grid">
-        <a class="mode-card" href="quiz.html" style="--glow:#ff5f6d"><span class="mode-icon">🧠</span><h3>Trivia Mix</h3><p>Hundreds of questions across music, pop culture, geography, history and more.</p><div class="mode-meta"><span>345+ cards</span><span class="arrow">↗</span></div></a>
-        <a class="mode-card" href="cards.html" style="--glow:#ffc371"><span class="mode-icon">🎭</span><h3>Challenges</h3><p>Dares, mini-games, impressions and room-energy cards for party mode.</p><div class="mode-meta"><span>145+ cards</span><span class="arrow">↗</span></div></a>
-        <a class="mode-card" href="flags.html" style="--glow:#8b5cf6"><span class="mode-icon">🌍</span><h3>Flag Sprint</h3><p>Pick a region, guess the country, reveal, score and move straight to the next flag.</p><div class="mode-meta"><span>7 regions</span><span class="arrow">↗</span></div></a>
+    <section class="launch-grid" aria-label="Ways to play">
+      <a class="launch-card" href="setup.html?mode=quick"><span class="launch-icon">📱</span><div><h2>Quick Play</h2><p>One device. Pass the phone. Works offline.</p></div><span>→</span></a>
+      <a class="launch-card" href="setup.html?mode=party"><span class="launch-icon">🎉</span><div><h2>Host Party</h2><p>Individuals or teams with timers, scoring and a TV-friendly host screen.</p></div><span>→</span></a>
+      <a class="launch-card" href="join.html"><span class="launch-icon">⚡</span><div><h2>PartyPlay Live</h2><p>Join by code. Race on your own phones. Built for speed rounds.</p></div><span>→</span></a>
+      <a class="launch-card" href="setup.html?mode=learn"><span class="launch-icon">🎓</span><div><h2>Play & Learn</h2><p>Maths, science, geography and adaptive kid-friendly rounds.</p></div><span>→</span></a>
+    </section>
+
+    <section class="section" id="packs">
+      <div class="section-kicker">GAME PACKS</div><h2 class="section-title">Pick a vibe, not forty settings.</h2>
+      <p class="section-lede">PartyPlay filters rounds by your player count, devices, camera availability, age mode and selected vibe.</p>
+      <div class="pack-grid">
+        <article class="pack-card"><span>🎉</span><h3>Party Night</h3><p>Trivia, social, music, challenges, puzzles and comeback rounds.</p></article>
+        <article class="pack-card"><span>🇰🇪</span><h3>Kenyan Cocktail</h3><p>Kenyan history, counties, Sheng, music, food, landmarks, internet culture and nostalgia.</p></article>
+        <article class="pack-card"><span>😂</span><h3>Brainrot</h3><p>Memes, trends, slang, internet culture, emoji decoding and chaotic mini-games.</p></article>
+        <article class="pack-card"><span>🧠</span><h3>Smart Night</h3><p>History, geography, science, visual discovery, logic and harder puzzles.</p></article>
+        <article class="pack-card"><span>🏆</span><h3>Task Arena</h3><p>Safe physical tasks, scavenger hunts, photo proof, drawing and host judging.</p></article>
+        <article class="pack-card"><span>🎓</span><h3>Play & Learn</h3><p>Maths by level, science, memory, geography and explanations after answers.</p></article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="music-strip">
-        <div><h3>Music without locking the game to one platform.</h3><p>Keep local clips where you own them, or launch the current song on Spotify, YouTube Music or YouTube. The provider is saved per device.</p></div>
-        <div class="provider-row"><span class="provider">● Spotify</span><span class="provider">▶ YouTube Music</span><span class="provider">▰ YouTube</span></div>
+    <section class="section split" id="how">
+      <div>
+        <div class="section-kicker">DEVICE-AWARE</div><h2 class="section-title">PartyPlay only offers games your room can actually play.</h2>
+        <p class="section-lede">Tell it how many players and devices you have. One phone? Shared team phones? One device each? TV available? Camera allowed? The library filters itself automatically.</p>
       </div>
+      <div class="capability-list">
+        <div><b>1 device</b><span>Pass-the-phone trivia, verbal puzzles, host-judged tasks.</span></div>
+        <div><b>1 per team</b><span>Head-to-head answers, team buzzers, versus puzzles.</span></div>
+        <div><b>1 per player</b><span>Speed trivia, secret roles, private answers, live voting.</span></div>
+        <div><b>TV / projector</b><span>Big-screen questions, photo reveals, leaderboards and winner screens.</span></div>
+      </div>
+    </section>
+
+    <section class="section final-callout">
+      <div><div class="section-kicker">READY?</div><h2>Start with the room you actually have.</h2><p>No signup. Configure the crowd, devices and vibe, then PartyPlay builds the session.</p></div>
+      <a class="btn primary" href="setup.html?mode=party">Build a game →</a>
     </section>
   </main>
-  <footer class="footer"><span>PartyPlay • rebuilt game shell</span><span>Progress and player scores are stored only in this browser.</span></footer>
 
-  <div class="modal" id="sessionModal" role="dialog" aria-modal="true" aria-labelledby="sessionTitle">
-    <div class="modal-card"><div class="modal-head"><h3 id="sessionTitle">Set up players</h3><button class="icon-btn" data-close="sessionModal" aria-label="Close">×</button></div><p>Add names separated by commas. You can also play without players and use the decks casually.</p><div class="field"><label for="playerNames">Player names</label><input id="playerNames" placeholder="Lorna, Miriam, Jay"></div><div class="modal-actions"><button class="secondary-btn" data-close="sessionModal">Cancel</button><button class="primary-btn" id="savePlayersBtn">Save players</button></div></div>
-  </div>
-  <div class="modal" id="musicModal" role="dialog" aria-modal="true" aria-labelledby="musicTitle">
-    <div class="modal-card"><div class="modal-head"><h3 id="musicTitle">Music provider</h3><button class="icon-btn" data-close="musicModal" aria-label="Close">×</button></div><p>Choose where PartyPlay should search when a music card has no playable local clip or you want the full track.</p><div class="field"><label for="musicProvider">Preferred provider</label><select id="musicProvider"><option value="spotify">Spotify</option><option value="ytmusic">YouTube Music</option><option value="youtube">YouTube</option></select></div><p class="tiny">This version does not store provider passwords or API keys. It opens the official provider search for the card’s song/title.</p><div class="modal-actions"><button class="primary-btn" id="saveMusicBtn">Save preference</button></div></div>
-  </div>
-  <script src="js/app.js"></script>
+  <footer class="site-footer"><span>PartyPlay v1.1 platform build</span><span>Local-first • temporary live rooms • no permanent player database</span></footer>
+  <script src="js/core.js"></script>
+  <script src="js/splash.js"></script>
 </body>
 </html>

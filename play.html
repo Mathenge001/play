@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080914">
+<title>Play • PartyPlay</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/platform.css">
+</head>
+<body class="play-page">
+<header class="game-nav">
+  <a class="brand compact-brand" href="index.html"><span class="brand-mark">P</span><span>PartyPlay</span></a>
+  <div class="game-status"><span id="roundStatus">Round 1 / 20</span><span id="modeStatus" class="tag">LOCAL</span></div>
+  <div class="game-actions"><button id="tvButton" class="icon-action" type="button" title="TV mode">📺</button><button id="pauseButton" class="icon-action" type="button" title="Pause">⏸</button><button id="menuButton" class="icon-action" type="button" title="Game menu">☰</button></div>
+</header>
+
+<main class="game-layout">
+  <aside class="score-rail" id="scoreRail">
+    <div class="rail-title"><span>Leaderboard</span><button id="collapseScores" class="tiny-icon" type="button" aria-label="Collapse scores">‹</button></div>
+    <div id="scoreList" class="score-list"></div>
+    <div class="round-mini"><span>Pack</span><b id="packLabel">Party Night</b></div>
+  </aside>
+
+  <section class="stage" id="stage">
+    <div class="turn-banner"><div><span class="turn-kicker" id="turnKicker">UP NEXT</span><strong id="turnName">Everyone plays</strong></div><div class="timer-wrap" id="timerWrap"><span id="timerText">00:20</span><div class="timer-ring"><svg viewBox="0 0 42 42"><circle class="timer-bg" cx="21" cy="21" r="17"></circle><circle id="timerCircle" class="timer-progress" cx="21" cy="21" r="17"></circle></svg></div></div></div>
+
+    <div id="wagerStrip" class="wager-strip hidden" aria-label="Virtual point wager">
+      <div><span class="section-kicker">RISK ROUND</span><b id="wagerPrompt">Choose your confidence</b></div>
+      <div id="wagerChoices" class="wager-choices"></div>
+      <span id="wagerNote" class="wager-note">Virtual game points only.</span>
+    </div>
+
+    <article id="roundCard" class="round-card" aria-live="polite">
+      <div id="roundMeta" class="round-meta"><span class="round-engine">🧠 QUIZ</span><span class="difficulty-pill">MEDIUM · 2 PTS</span></div>
+      <div id="roundMedia" class="round-media hidden"></div>
+      <h1 id="roundPrompt">Loading your game…</h1>
+      <p id="roundHint" class="round-hint hidden"></p>
+      <div id="roundInteraction" class="round-interaction"></div>
+      <div id="answerPanel" class="answer-panel hidden"><span class="answer-label">ANSWER</span><strong id="answerText"></strong><p id="answerFact"></p></div>
+    </article>
+
+    <div id="hostControls" class="host-controls">
+      <button id="wrongButton" class="score-btn wrong" type="button">✕ Wrong</button>
+      <button id="revealButton" class="btn secondary" type="button">Reveal answer</button>
+      <button id="correctButton" class="score-btn correct" type="button">✓ Correct <span id="pointValue">+2</span></button>
+      <button id="judgeButton" class="score-btn correct hidden" type="button">🏆 Judge / award</button>
+      <button id="nextButton" class="btn primary hidden" type="button">Next round →</button>
+    </div>
+
+    <div id="liveResponsePanel" class="live-response-panel hidden"><div class="response-head"><span>Live responses</span><b id="responseCount">0 / 0</b></div><div id="responseList" class="response-list"></div></div>
+  </section>
+</main>
+
+<div id="transitionOverlay" class="transition-overlay hidden"><div class="transition-inner"><span id="transitionKicker">ROUND 1</span><div id="transitionIcon">🎉</div><h2 id="transitionTitle">Party Night</h2><p id="transitionSub">Lorna, you're up.</p><button id="beginRound" class="btn primary" type="button">Start round</button></div></div>
+<div id="winnerOverlay" class="transition-overlay hidden"><div class="transition-inner winner"><span>GAME COMPLETE</span><div class="trophy">🏆</div><h2 id="winnerTitle">Team Chaos wins!</h2><p id="winnerPrize" class="winner-prize hidden"></p><div id="finalLeaderboard" class="final-board"></div><div id="recognitionBoard" class="recognition-board hidden"></div><div class="winner-actions"><button id="rematchButton" class="btn primary" type="button">Rematch</button><a class="btn secondary" href="setup.html?mode=party">New game</a><button id="recapButton" class="btn ghost" type="button">Game recap</button></div></div></div>
+<div id="gameMenu" class="side-drawer hidden" role="dialog" aria-modal="true" aria-label="Game menu"><div class="drawer-head"><b>Game menu</b><button id="closeMenu" class="icon-action" type="button">×</button></div><button id="skipRound" type="button">Skip this round</button><button id="adjustScore" type="button">Adjust scores</button><button id="changeDevices" type="button">Device setup</button><button id="openEvidence" type="button">Session evidence</button><a href="setup.html?mode=party">End & build another game</a></div>
+<div id="evidenceModal" class="modal-shell hidden" role="dialog" aria-modal="true"><div class="modal-card wide"><div class="modal-head"><div><span class="section-kicker">SESSION EVIDENCE</span><h2>Challenge gallery</h2></div><button class="icon-action" data-close-modal="evidenceModal" type="button">×</button></div><p>Photos are kept in memory for this session and are not uploaded in local play.</p><div id="evidenceGrid" class="evidence-grid"></div><div class="modal-actions"><button id="clearEvidence" class="btn ghost danger" type="button">Delete session photos</button><button class="btn secondary" data-close-modal="evidenceModal" type="button">Close</button></div></div></div>
+<div id="scoreModal" class="modal-shell hidden" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2>Adjust scores</h2><button class="icon-action" data-close-modal="scoreModal" type="button">×</button></div><div id="scoreEditor" class="score-editor"></div><div class="modal-actions"><button class="btn primary" data-close-modal="scoreModal" type="button">Done</button></div></div></div>
+<div id="pauseOverlay" class="pause-overlay hidden"><div><span>PAUSED</span><h2>Game on hold</h2><button id="resumeButton" class="btn primary" type="button">Resume</button></div></div>
+
+<script src="js/content.js"></script><script src="js/core.js"></script><script src="js/live-client.js"></script><script src="js/play.js"></script>
+</body>
+</html>

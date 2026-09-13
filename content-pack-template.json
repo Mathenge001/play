@@ -1,0 +1,16 @@
+{
+  "name": "My PartyPlay Pack",
+  "rounds": [
+    {
+      "id": "sample-1",
+      "engine": "quiz",
+      "category": "Custom",
+      "difficulty": "easy",
+      "prompt": "Replace this with your question.",
+      "answer": "Correct answer",
+      "options": ["Correct answer", "Option B", "Option C", "Option D"],
+      "points": 1,
+      "seconds": 20
+    }
+  ]
+}

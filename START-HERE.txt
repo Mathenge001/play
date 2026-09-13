@@ -1,0 +1,28 @@
+PARTYPLAY v1 — START HERE
+
+No Supabase. No database. No npm packages are required.
+
+RUN THE COMPLETE PLATFORM (including PartyPlay Live):
+1. Install Node.js 20+ if it is not already installed.
+2. Open a terminal in this folder.
+3. Run: npm start
+4. Open: http://localhost:8787
+
+PHONES ON THE SAME WI-FI:
+- On Windows run: ipconfig
+- Find your Wi-Fi IPv4 address, e.g. 192.168.1.20
+- Players open http://YOUR-IP:8787/join.html or use the host's join link/code.
+- If Windows Firewall asks, allow Node on Private networks.
+
+LOCAL/OFFLINE PLAY:
+- Quick Play and normal local sessions do not need the realtime room service after the app shell is loaded.
+
+BUILD STATIC FILES:
+- Run: npm run build
+- Output: dist/
+- Static hosting supports local play. PartyPlay Live additionally needs server/live-server.mjs running on a WebSocket-capable Node host.
+
+GITHUB UPDATE:
+git add -A
+git commit -m "Rebuild PartyPlay as full game platform"
+git push
